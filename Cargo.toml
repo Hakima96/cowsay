@@ -4,14 +4,14 @@ version = "0.1.0"
 authors = ["Syrus Akbary <syrus@wasmer.io>"]
 
 [dependencies]
-clap = "2.32.0"
-rand = "~0.3"
-include_dir="0.2.1"
-wee_alloc = "*"
+clap = "2.33.3"
+rand = "0.8.5"
+include_dir = "0.6.0"
+wee_alloc = "0.4.5"
 
 [profile.release]
-lto="fat"
-opt-level =  "s"
+lto = "fat"
+opt-level = "s"
 codegen-units = 1
 
 # [[bin]]
@@ -23,6 +23,5 @@ codegen-units = 1
 # path = "src/main.rs"
 
 # [source]
-
 # [source.same-file]
 # directory = "./same-file"

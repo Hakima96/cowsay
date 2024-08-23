@@ -1,21 +1,6 @@
 [package]
-name = "syrusakbary/cowsay"
-version = "0.3.0"
-description = "cowsay is a program that generates ASCII pictures of a cow with a message"
+name = "hakima/cowsay"
+version = "0.1.0"
+description = "Ma version personnelle de cowsay, basée sur le projet original"
 readme = "README.md"
-repository = "https://github.com/wapm-packages/cowsay"
-entrypoint = "cowsay"
-
-[[module]]
-name = "cowsay"
-source = "target/wasm32-wasi/release/cowsay.wasm"
-abi = "wasi"
-interfaces = {wasi= "0.1.0-unstable"}
-
-[[command]]
-name = "cowsay"
-module = "cowsay"
-
-[[command]]
-name = "cowthink"
-module = "cowsay"
+repository = "https://github.com/votre-username/cowsay"  # Mettez à jour avec votre propre repo si vous en avez un
