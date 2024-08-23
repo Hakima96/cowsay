@@ -4,3 +4,7 @@ version = "0.1.0"
 description = "Ma version personnelle de cowsay, basée sur le projet original"
 readme = "README.md"
 repository = "https://github.com/votre-username/cowsay"  # Mettez à jour avec votre propre repo si vous en avez un
+
+[[command]]
+name = "cowsay"
+module = "cowsay"
