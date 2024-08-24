@@ -3,7 +3,15 @@ name = "hakima/cowsay"
 version = "0.1.0"
 description = "Ma version personnelle de cowsay, basée sur le projet original"
 readme = "README.md"
-repository = "https://github.com/votre-username/cowsay"  # Mettez à jour avec votre propre repo si vous en avez un
+repository = "https://github.com/votre-username/cowsay"
+
+[[module]]
+name = "cowsay"
+source = "target/wasm32-wasi/release/cowsay.wasm"
+abi = "wasi"
+
+[module.interfaces]
+wasi = "0.1.0-unstable"
 
 [[command]]
 name = "cowsay"
