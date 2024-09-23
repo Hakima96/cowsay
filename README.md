@@ -125,3 +125,4 @@ You can also build a native executable with
 cargo build
 ```
 # my-pfe-app
+# cowsay
